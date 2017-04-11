@@ -1,5 +1,6 @@
 package ru.merkulyevsasha.recyclerviews.presentation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -109,7 +110,11 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onItemClick(VideoItem item) {
-        showMessage(item.getTitle());
+        //showMessage(item.getTitle());
+
+        Intent intent = new Intent(this, VideoDetailsActivity.class);
+        intent.putExtra(VideoDetailsActivity.KEY_ITEM, item);
+        startActivity(intent);
     }
 
     public void showPersonalFragment(){

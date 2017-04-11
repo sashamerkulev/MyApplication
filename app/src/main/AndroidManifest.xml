@@ -17,6 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="ru.merkulyevsasha.recyclerviews.presentation.VideoDetailsActivity"
+            android:theme="@style/AppTheme.FullScreen"
+            android:label=""
+            >
+
+        </activity>
     </application>
 
 </manifest>
